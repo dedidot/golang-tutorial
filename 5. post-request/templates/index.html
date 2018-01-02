@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Comments</title>
+    </head>
+
+    <body>
+        <h1>Comments</h1>
+        <form method="post">
+            <textarea name="comment"></textarea>
+            <div><button type="sumbit">Comment</button></div>
+        </form>
+
+        {{ range . }}
+        <div>{{ . }}</div>
+        {{ end }}
+    </body>
+</html>
